@@ -3,19 +3,22 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #1e1e1e;
 }
 
 header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
     color: white;
-    padding: 20px 0;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -30,78 +33,45 @@ nav ul li a {
 }
 
 .header-content {
-    padding: 50px 20px;
+    max-width: 600px;
 }
 
 .header-content h1 {
-    margin: 0;
     font-size: 3em;
+    margin: 0;
 }
 
 .header-content p {
     font-size: 1.2em;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#about {
-    background-color: #ffffff;
-}
-
-#projects {
-    background-color: #f4f4f9;
-}
-
-.project-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project {
-    background-color: white;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-.project a {
+.button {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
-    color: #2575fc;
+    border-radius: 5px;
     font-weight: bold;
 }
 
-#contact {
-    background-color: #ffffff;
+.profile-image {
+    flex-shrink: 0;
 }
 
-.social-links a {
-    color: #2575fc;
-    margin: 0 10px;
-    font-size: 1.5em;
-    text-decoration: none;
+.profile-image img {
+    border-radius: 10px;
+    max-width: 100%;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 0.9em;
-}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-footer p {
-    margin: 0;
+    .profile-image {
+        margin-top: 20px;
+    }
 }
-
